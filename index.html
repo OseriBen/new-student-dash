@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> 
+</head>
+<body>
+    
+    <header class="topnav">
+        <div class="logo">
+            <span>UNI-BEN</span>
+        </div>
+
+        <div class="search-bar">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" placeholder="Search for anything..." />
+        </div>
+
+        <div class="topnav-right">
+            <div class="icon"><i class="fa-solid fa-music"></i></div>
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="icon"><i class="fa-solid fa-bell"></i></div>
+
+            <div class="user-dropdown">
+                <img src="assets/img-1.jpg" class="user-avatar" id="userAvatar" />
+                
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div class="dropdown-item theme-toggle" id="themeToggle">
+                        <i class="fa-solid fa-sun"></i> <span>Light Mode</span>
+                    </div>
+                    <div class="dropdown-separator"></div> 
+                    
+                    <div class="dropdown-item"><i class="fa-regular fa-user"></i> Profile</div>
+                    <div class="dropdown-item"><i class="fa-solid fa-gear"></i> Settings</div>
+                    <div class="dropdown-item logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-wrapper"> 
+        
+        <aside class="sidebar">
+            
+            <div class="profile-mini">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                    <h4 class="profile-title">Institute of Music</h4>
+                    <p class="profile-subtitle">First year</p>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <div class="menu-item"><i class="fa-solid fa-border-all" style="width: 20px;"></i> Dashboard</div>
+                <div class="menu-item active"><i class="fa-solid fa-book" style="width: 20px;"></i> Classes</div>
+                <div class="menu-item"><i class="fa-regular fa-comments" style="width: 20px;"></i> Discussions</div>
+                
+                <div class="section-title">Insight</div>
+                <div class="menu-item"><i class="fa-regular fa-folder" style="width: 20px;"></i> Resources</div>
+                <div class="menu-item"><i class="fa-regular fa-calendar" style="width: 20px;"></i> My Schedule</div>
+            </nav>
+
+            <div class="logout-sidebar">
+                <i class="fa-solid fa-power-off"></i> Logout
+            </div>
+        </aside>
+
+        <main class="content-grid">
+            
+            <section class="left-panel">
+                <div class="header">
+                    <h1>My Classes <span>.</span></h1>
+                </div>
+
+                <div class="classes-grid">
+                    <div class="card card-class">
+                        <div class="icon-box icon-bio"><i class="fa-solid fa-leaf"></i></div>
+                        <h3>Biography</h3>
+                        <p>4 Tasks Remaining</p>
+                        <button class="btn-view">View Tasks</button>
+                    </div>
+                    <div class="card card-class">
+                        <div class="icon-box icon-math"><i class="fa-solid fa-calculator"></i></div>
+                        <h3>Math</h3>
+                        <p>3 Tasks Remaining</p>
+                        <button class="btn-view">View Tasks</button>
+                    </div>
+                    <div class="card card-class">
+                        <div class="icon-box icon-psy"><i class="fa-solid fa-brain"></i></div>
+                        <h3>Psychology</h3>
+                        <p>No assignment yet</p>
+                        <button class="btn-view">View Tasks</button>
+                    </div>
+                </div>
+
+                <h2>Today Tasks <span>.</span></h2>
+                <div class="tasks-header">
+                    <div class="tab active">Forum</div>
+                    <div class="tab inactive">To - do</div>
+                    <div class="tab inactive">Members</div>
+                </div>
+
+                <div class="task-list">
+                    <div class="task-item">
+                        <div class="task-info">
+                            <div class="task-icon task-icon-bio"><i class="fa-regular fa-file-lines"></i></div>
+                            <div class="task-text">
+                                <h4>Quiz if you become a motivator</h4>
+                                <p>Biography . Mr James Abeboye</p>
+                            </div>
+                        </div>
+                        <span class="tag tag-task">Task</span>
+                        <button class="btn-action btn-orange">+ Add or Create</button>
+                    </div>
+
+                    <div class="task-item">
+                        <div class="task-info">
+                            <div class="task-icon task-icon-bio"><i class="fa-regular fa-file-lines"></i></div>
+                            <div class="task-text">
+                                <h4>The life story of a motivator</h4>
+                                <p>Biography . Mr James Adeboye</p>
+                            </div>
+                        </div>
+                        <span class="tag tag-theory">Theory</span>
+                        <button class="btn-action btn-pale">Mark as Done</button>
+                    </div>
+                    
+                    <div class="task-item">
+                        <div class="task-info">
+                            <div class="task-icon task-icon-math"><i class="fa-regular fa-file-lines"></i></div>
+                            <div class="task-text">
+                                <h4>Algebra property assignments</h4>
+                                <p>Math . Mrs Anita Ebere</p>
+                            </div>
+                        </div>
+                        <span class="tag tag-task">Task</span>
+                        <button class="btn-action btn-orange">+ Add or Create</button>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="right-panel">
+                
+                <div class="calendar-section">
+                    <div class="cal-header">
+                        <h2>January 2021</h2>
+                        <div>
+                            <i class="fa-solid fa-chevron-left cal-arrow" ></i>
+                            <i class="fa-solid fa-chevron-right cal-arrow-active" ></i>
+                        </div>
+                    </div>
+                    
+                    <div class="cal-grid">
+                        <div class="day-name">Mon</div><div class="day-name">Tue</div><div class="day-name">Wed</div><div class="day-name">Thu</div><div class="day-name">Fri</div><div class="day-name">Sat</div><div class="day-name">Sun</div>
+                        
+                        <div class="date">18</div>
+                        <div class="date active">19</div>
+                        <div class="date">20</div>
+                        <div class="date">21</div>
+                        <div class="date active-orange">22</div>
+                        <div class="date">23</div>
+                        <div class="date">24</div>
+                        <div class="date">25</div>
+                        <div class="date">26</div>
+                        <div class="date">27</div>
+                        <div class="date">28</div>
+                        <div class="date">29</div>
+                        <div class="date">30</div>
+                        <div class="date">31</div>
+                    </div>
+                </div>
+
+                <h2>Upcoming <span>.</span></h2>
+                <div class="upcoming-list">
+                    <div class="event-item">
+                        <div class="event-icon icon-psy"><i class="fa-solid fa-brain"></i></div>
+                        <div class="event-info">
+                            <h4>Psychology Exam</h4>
+                            <p>Carry out writing exams</p>
+                        </div>
+                        <div class="event-time">
+                            <div class="event-date">19 Jan</div>
+                            <div class="event-duration">45 Minutes</div>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-icon icon-math"><i class="fa-solid fa-calculator"></i></div>
+                        <div class="event-info">
+                            <h4>Mathematics Theory</h4>
+                            <p>Carry out writing</p>
+                        </div>
+                        <div class="event-time">
+                            <div class="event-date">20 - 21 Jan</div>
+                            <div class="event-duration">3 Hours</div>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-icon icon-literature"><i class="fa-solid fa-book-open"></i></div>
+                        <div class="event-info">
+                            <h4>Literature Exam</h4>
+                            <p>Carry out writing exams</p>
+                        </div>
+                        <div class="event-time">
+                            <div class="event-date">22 Jan</div>
+                            <div class="event-duration">50 Minutes</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-all-link">
+                    <a href="#">View all upcoming ></a>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="#">Copyright Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer-center">
+            © 2024 BXNJAMIN. All Rights Reserved.
+        </div>
+
+        <div class="footer-right">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-tiktok"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
