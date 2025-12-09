@@ -387,7 +387,7 @@ h1 span, h2 span { color: var(--c-accent-main); }
 }
 
 
-/* ---------------- FOOTER ---------------- */
+/* ------- FOOTER ------------ */
 .footer {
     padding: 20px 30px;
     background: var(--c-bg-primary); 
